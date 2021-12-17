@@ -8,14 +8,14 @@ int main(){
     e=0; // Guarda el vvalor de la aproximacion
     for(i=0 ;i<s ;i++){
         u = fact(i); // Invocacion de Funcion Factorial
-        e+=1/u; //  kje+=1/fact(i)
+        e+=1/u; //  e+=1/fact(i)
     }
     cout<<"\nEl valor aproximado de e en base a su numero "<<s<<" es "<<e<<endl;
 }
 int fact(int f){
     int factorial=f;
     if(factorial>1){
-        factorial = f*fact(f-1);
+        factorial = f*(f-1);
         return factorial;
     }
     else{
